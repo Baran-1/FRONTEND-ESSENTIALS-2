@@ -31,7 +31,7 @@ Bovenstaande HTML en CSS levert de dobbelsteen met het getal 1 op. In bovenstaan
 ### Leerdoelen
 
 1. Ik kan samengestelde selectors gebruiken om onderscheid te maken tussen schijnbaar gelijke elementen.
-2. 
+2. s
 
 ### Opdracht
 
