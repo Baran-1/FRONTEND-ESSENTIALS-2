@@ -11,6 +11,20 @@ topFilms = [
     "Lawrence of Arabia"
 ];
 
+
+
+
+function kiesFavorieteFilm(antwoord){
+    antwoord = prompt("type een getal in");
+    antwoord = topFilms[antwoord-1];
+    console.log(antwoord)
+    document.body.style.backgroundColor = "blue";
+}
+
+
+
+    
+
 document.querySelector(".film1-ranking").innerHTML = 1;
 document.querySelector(".film1-naam").innerHTML = topFilms[0];
 document.querySelector(".film2-ranking").innerHTML = 2;
@@ -31,5 +45,6 @@ document.querySelector(".film9-ranking").innerHTML = 9;
 document.querySelector(".film9-naam").innerHTML = topFilms[8];
 document.querySelector(".film10-ranking").innerHTML = 10;
 document.querySelector(".film10-naam").innerHTML = topFilms[9];
+
 
 
