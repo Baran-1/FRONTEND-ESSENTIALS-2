@@ -12,15 +12,13 @@ topFilms = [
 ];
 
 
-
-
 function kiesFavorieteFilm(antwoord){
     antwoord = prompt("type een getal in");
+    colorName = ".film" + antwoord + "-naam";
     antwoord = topFilms[antwoord-1];
-    console.log(antwoord)
-    document.body.style.backgroundColor = "blue";
+    console.log(antwoord) 
+    document.querySelector(colorName).style.backgroundColor = "blue";
 }
-
 
 
     
