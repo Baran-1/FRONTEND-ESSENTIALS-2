@@ -18,6 +18,16 @@ for(i = 0; i < topFilms.length; i++){
     document.querySelector(".imdb-film" + (i+1)).innerHTML = topFilms[i];
 }
 
-function kiesFilm(){
+function kiesFilm(antwoord){
+antwoord = prompt("Kies een Film voor plek 1");
+antwoord = topFilms[antwoord-1];
+eigenTopFilms.push(".eigen-film1");
 
+document.querySelector(".eigen-film1").innerHTML = antwoord;
+
+console.log(antwoord);
+}
+ 
+function Kiesfilm2(antwoord2){
+    antwoord2 = prompt("Kies een Film voor plek 2");
 }
