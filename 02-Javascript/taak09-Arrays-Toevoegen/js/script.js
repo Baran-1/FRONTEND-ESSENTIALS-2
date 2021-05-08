@@ -18,16 +18,28 @@ for(i = 0; i < topFilms.length; i++){
     document.querySelector(".imdb-film" + (i+1)).innerHTML = topFilms[i];
 }
 
+let huidigePositie = 1;
 function kiesFilm(antwoord){
-antwoord = prompt("Kies een Film voor plek 1");
-antwoord = topFilms[antwoord-1];
-eigenTopFilms.push(".eigen-film1");
+    antwoord = prompt(`Kies een Film voor plek ${huidigePositie}`);
+    
+    let film = topFilms[antwoord - 1]
 
-document.querySelector(".eigen-film1").innerHTML = antwoord;
+    document.querySelector(`.eigen-film${huidigePositie}`).innerHTML = film;
 
-console.log(antwoord);
+    document.querySelector(`.imdb-film${antwoord}`).style.textDecoration = "line-through";
+    
+    huidigePositie++; 
+
+  if(huidigePositie===4) {
+    document.querySelector(".kiesfilm-button").textContent = "Klaar!";
+} else {
+    document.querySelector(".huidige-positie").textContent = huidigePositie;
 }
- 
-function Kiesfilm2(antwoord2){
-    antwoord2 = prompt("Kies een Film voor plek 2");
 }
+
+
+//function geefKleur(colorName){
+    //colorName = ".film" + antwoord + "-naam";
+   // document.querySelector(colorName).style.backgroundColor = "blue";
+
+//}
